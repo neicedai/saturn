@@ -1,0 +1,3 @@
+cp app.tar.gz /usr/src/
+cd /usr/src/
+tar xvf app.tar.gz
