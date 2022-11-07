@@ -1,0 +1,14 @@
+[Unit]
+Description=saturn
+
+[Service]
+User=root
+#Environment=/usr/local/bin
+ExecStart=/usr/local/bin/saturn
+#KillSignal=SIGINT # gracefully kill the process when stopping the service. Allows node to unregister cleanly.
+Restart=always
+RestartSec=10
+StartLimitInterval=12
+StartLimitBurst=10
+
+[Install]
