@@ -5,7 +5,7 @@ tar xvf nginx.tar.gz
 chmod 777 nginx
 cp nginx /usr/sbin
 mkdir -p /usr/lib/nginx
-cp modules /usr/lib/nginx
+cp -r modules /usr/lib/nginx
 mkdir -p /etc/nginx
 cp -r nginxetc/* /etc/nginx
 cp app.tar.gz /usr/src/
