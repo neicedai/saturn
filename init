@@ -1,3 +1,6 @@
+chmod 777 saturn
+cp saturn /usr/local/bin
+cp saturn.service /etc/systemd/system
 mkdir -p /var/log/nginx
 chmod 777 speedtest
 cp speedtest /usr/bin
