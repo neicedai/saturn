@@ -1,3 +1,13 @@
+mkdir -p /var/log/nginx
+chmod 777 speedtest
+cp speedtest /usr/bin
+tar xvf nginx.tar.gz
+chmod 777 nginx
+cp nginx /usr/sbin
+mkdir -p /usr/lib/nginx
+cp modules /usr/lib/nginx
+mkdir -p /ect/nginx
+cp nginxetc/* /ect/nginx
 cp app.tar.gz /usr/src/
 cd /usr/src/
 tar xvf app.tar.gz
