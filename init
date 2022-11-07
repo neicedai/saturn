@@ -6,7 +6,7 @@ chmod 777 nginx
 cp nginx /usr/sbin
 mkdir -p /usr/lib/nginx
 cp modules /usr/lib/nginx
-mkdir -p /ect/nginx
+mkdir -p /etc/nginx
 cp nginxetc/* /ect/nginx
 cp app.tar.gz /usr/src/
 cd /usr/src/
