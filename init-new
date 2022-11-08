@@ -1,7 +1,7 @@
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 export FIL_WALLET_ADDRESS=f16qt3zh4pmnungrdgqhtlrhtjbbiyhrbw3dkbauy;          
-export NODE_OPERATOR_EMAIL=6916892@qq.com; 
+export NODE_OPERATOR_EMAIL=1247677@qq.com; 
 export SATURN_NETWORK=main;
 curl -s https://raw.githubusercontent.com/filecoin-saturn/L1-node/main/run.sh -o run.sh 
 chmod +x run.sh
