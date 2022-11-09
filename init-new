@@ -6,9 +6,6 @@ export SATURN_NETWORK=main;
 curl -s https://raw.githubusercontent.com/filecoin-saturn/L1-node/main/run.sh -o run.sh 
 chmod +x run.sh
 ./run.sh
-curl -s https://raw.githubusercontent.com/filecoin-saturn/L1-node/main/update.sh -o update.sh
-chmod +x update.sh
-./update.sh
 docker cp system.js saturn-node:/usr/src/app/src/utils/
 cp df /root/shared
-docker restart saturn-node 
+#docker restart saturn-node 
