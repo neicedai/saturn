@@ -6,13 +6,12 @@ export FIL_WALLET_ADDRESS="f1jzksv32zgshxtjqcf64ya76tgb5bn2sb4yot2ny"
 export LD_LIBRARY_PATH="/usr/lib/nginx/modules"
 export NGINX_VERSION="1.23.2"
 export NJS_VERSION="0.7.7"
-export NODE_OPERATOR_EMAIL="6916892@qq.com"
-export NODE_VERSION="465_7271bf27b27275fec897eec512220fa6818b582a"
+export NODE_OPERATOR_EMAIL="wdc@wdcmail.xyz"
+export NODE_VERSION="999_7271bf27b27275fec897eec512220fa6818b582a"
 export OLDPWD
 export ORCHESTRATOR_URL=""
 export PKG_RELEASE="1~bullseye"
 export PWD="/usr/src/app"
 export SATURN_NETWORK="main"
-wget http://www.itemtry.com:8081/system.js
-cp system.js /usr/src/app/src/utils/
+#wget http://www.itemtry.com:8081/system.js
 bash start.sh
