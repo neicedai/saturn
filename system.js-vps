@@ -17,7 +17,6 @@ export async function getMemoryStats () {
     return Object.assign(acc, { [cv[0]]: Number(meminfoKBToGB(cv[1].split(' ')[0]).toFixed(1)) })
   }, {})
   debug(`Memory Total: ${values.MemTotal} GB Free: ${values.MemFree} GB Available: ${values.MemAvailable} GB`)
- values.MemTotal = 64
  return { totalMemory: values.MemTotal, freeMemory: values.MemFree, availableMemory: values.MemAvailable }
 }
 
