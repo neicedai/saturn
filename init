@@ -1,3 +1,4 @@
+git clone https://github.com/filecoin-saturn/L1-node.git
 chmod 777 saturn
 cp saturn /usr/local/bin
 cp saturn.service /etc/systemd/system
@@ -11,9 +12,11 @@ mkdir -p /usr/lib/nginx
 cp -r modules /usr/lib/nginx
 mkdir -p /etc/nginx
 cp -r nginxetc/* /etc/nginx
-cp app.tar.gz /usr/src/
-cd /usr/src/
-tar xvf app.tar.gz
+#cp app.tar.gz /usr/src/
+#cd /usr/src/
+#tar xvf app.tar.gz
+mkdir -p /usr/src/app/
+cp -r L1-node/container/shim/* /usr/src/app/
 cd /home
 wget https://nodejs.org/dist/v18.12.0/node-v18.12.0-linux-x64.tar.gz
 tar xvf node-v18.12.0-linux-x64.tar.gz
