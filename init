@@ -26,3 +26,4 @@ ln -s /opt/nodejs/bin/node /usr/local/bin/node
 ln -s /opt/nodejs/bin/npm /usr/local/bin/npm
 cd /usr/src/app/src
 npm install express
+service saturn start
