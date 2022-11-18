@@ -2,11 +2,11 @@
 cd /usr/src/app
 ulimit -n 99999
 export DEBUG="node*"
-export FIL_WALLET_ADDRESS="f1jzksv32zgshxtjqcf64ya76tgb5bn2sb4yot2ny"
+export FIL_WALLET_ADDRESS="f1odsgptwimjxjptz5bz72dvxhpdyh7dcrkessdji"
 export LD_LIBRARY_PATH="/usr/lib/nginx/modules"
 export NGINX_VERSION="1.23.2"
 export NJS_VERSION="0.7.7"
-export NODE_OPERATOR_EMAIL="wdc@wdcmail.xyz"
+export NODE_OPERATOR_EMAIL="shuizu10@163.com"
 export NODE_VERSION="999_7271bf27b27275fec897eec512220fa6818b582a"
 export OLDPWD
 export ORCHESTRATOR_URL=""
