@@ -1,0 +1,9 @@
+service saturn stop
+chmod 777 saturn
+cp saturn /usr/local/bin
+cd /home/
+rm -rf L1-node
+git clone https://github.com/filecoin-saturn/L1-node.git
+cp -r L1-node/container/shim/* /usr/src/app/
+nano /usr/local/bin/saturn 
+service saturn start
