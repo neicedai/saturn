@@ -7,7 +7,7 @@ export LD_LIBRARY_PATH="/usr/lib/nginx/modules"
 export NGINX_VERSION="1.23.2"
 export NJS_VERSION="0.7.7"
 export NODE_OPERATOR_EMAIL="6916892@qq.com"
-export NODE_VERSION="518_7271bf27b27275fec897eec512220fa6818b582a"
+export NODE_VERSION="524_7271bf27b27275fec897eec512220fa6818b582a"
 export OLDPWD
 export ORCHESTRATOR_URL=""
 export PKG_RELEASE="1~bullseye"
