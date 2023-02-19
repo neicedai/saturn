@@ -1,4 +1,5 @@
 apt install expect -y
+rm ip
 wget -qO- http://ipecho.net/plain >> ip
 ipadd=`cat ip`
 mkdir $ipadd
