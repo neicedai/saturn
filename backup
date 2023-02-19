@@ -2,7 +2,7 @@ apt install expect -y
 rm ip
 wget -qO- http://ipecho.net/plain >> ip
 ipadd=`cat ip`
-mkdir $ipadd
+mkdir -p /root/$ipadd
 cd /root/shared
 cp node* /$ipadd
 cp -r ssl /$ipadd
