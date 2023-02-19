@@ -4,8 +4,8 @@ wget -qO- http://ipecho.net/plain >> ip
 ipadd=`cat ip`
 mkdir -p /root/$ipadd
 cd /root/shared
-cp node* /$ipadd
-cp -r ssl /$ipadd
+cp node* /root/$ipadd
+cp -r ssl /root/$ipadd
 cd /root/
 expect << EOF
 set timeout 99999
