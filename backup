@@ -1,0 +1,19 @@
+apt install expect -y
+wget -qO- http://ipecho.net/plain >> ip
+ipadd=`cat ip`
+mkdir $ipadd
+cd /root/shared
+cp node* /$ipadd
+cp -r ssl /$ipadd
+cd /root/
+expect << EOF
+set timeout 99999
+spawn bash -c "rsync -r -P --rsh=ssh $ipadd root@185.213.25.57:/home/fil"
+expect {
+    "password" {send "!QAZ2wsxThinker\r";}
+    "yes/no" {send "yes\r";exp_continue}
+}
+expect eof
+exit
+set timeout 99999
+EOF
