@@ -7,12 +7,7 @@ sudo chmod +x /usr/local/bin/random_fstrim.sh
 # 2. 创建 random_fstrim.service
 echo -e "[Unit]\nDescription=Random fstrim Service\n\n[Service]\nExecStart=/usr/local/bin/random_fstrim.sh\nRestart=always\n\n[Install]\nWantedBy=multi-user.target" | sudo tee /etc/systemd/system/random_fstrim.service > /dev/null
 
-# 3. 创建 random_fstrim.timer
-echo -e "[Unit]\nDescription=Starts random_fstrim.service periodically\n\n[Timer]\nOnBootSec=10min\nOnUnitActiveSec=24h\n\n[Install]\nWantedBy=timers.target" | sudo tee /etc/systemd/system/random_fstrim.timer > /dev/null
-
-# 4. 启动并启用 timer
+# 3. 使服务在系统启动时自动运行
 sudo systemctl daemon-reload
-sudo systemctl start random_fstrim.timer
-sudo systemctl enable random_fstrim.timer
-
-echo "设置完成。random_fstrim 服务和计时器都已配置和启动。"
+sudo systemctl enable random_fstrim.service
+sudo systemctl start random_fstrim.service
