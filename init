@@ -1,0 +1,11 @@
+bash fv
+mkdir /iscsi
+cd /iscsi
+rm *
+dd if=/dev/zero of=/iscsi/st.img bs=1 count=0 seek=4T conv=sparse
+mkfs.ext4 st.img
+mkdir -p /root/shared
+mount -o loop /iscsi/st.img /root/shared
+sed -i '/exit 0/d' /etc/rc.local
+echo -e "mount -o loop /iscsi/st.img /root/shared" >> /etc/rc.local
+echo "exit 0" >> /etc/rc.local
