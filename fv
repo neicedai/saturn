@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 1. 创建 random_fstrim.sh 脚本
-echo -e "#!/bin/bash\n\nwhile true; do\n    sleep \$[RANDOM%60]m\n    sleep 360m\n    fstrim -av\ndone" | sudo tee /usr/local/bin/random_fstrim.sh > /dev/null
+echo -e "#!/bin/bash\n\nwhile true; do\n    sleep \$[RANDOM%60]m\n    sleep 360m\n    /usr/sbin/fstrim -av >> /root/qingli\ndone" | sudo tee /usr/local/bin/random_fstrim.sh > /dev/null
 sudo chmod +x /usr/local/bin/random_fstrim.sh
 
 # 2. 创建 random_fstrim.service
